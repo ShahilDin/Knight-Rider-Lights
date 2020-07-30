@@ -17,7 +17,7 @@
 
 int main(void)
 {
-    DDRC=0xFF; // Set as output // Connected to 7 seg display on ATBUS1287
+    DDRC=0xFF; // Set as output // Connected to 7 seg display on ATBUS1286
     PORTC=0x00; // Starts of at 0
     DDRD=0xFF; //Set as input
 	
@@ -28,7 +28,7 @@ int main(void)
 	
 	
     {
-		
+		// setting each bit in PortC high to turn on LED which are connect via source method 
 		PORTC = 0b10000000; // turning on port c.0 1 
 		_delay_ms(100);
 		PORTC=  0b01000000;
